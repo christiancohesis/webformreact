@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Details</title>
+</head>
+<body>
+  <h1>Form Details</h1>
+
+  <script>
+    // Parse URL parameters
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const email = params.get('email');
+    const phone = params.get('phone');
+    const requestType = params.get('requestType');
+    const requestDesc = params.get('requestDesc');
+    const serviceArea = params.get('serviceArea');
+    const user_id = params.get('user_id');
+    const title = params.get('title');
+    const address = params.get('address');
+    const latitude = params.get('latitude');
+    const longitude = params.get('longitude');
+
+    // Display form details on the page
+    document.write("<p><strong>Name:</strong> " + name + "</p>");
+    document.write("<p><strong>Email:</strong> " + email + "</p>");
+    document.write("<p><strong>user_id:</strong> " + user_id + "</p>");
+    document.write("<p><strong>Phone:</strong> " + phone + "</p>");
+    document.write("<p><strong>Request Type:</strong> " + requestType + "</p>");
+    document.write("<p><strong>Request Description:</strong> " + requestDesc + "</p>");
+    document.write("<p><strong>Service Area:</strong> " + serviceArea + "</p>");
+    document.write("<p><strong>Title:</strong> " + title + "</p>");
+    document.write("<p><strong>Address:</strong> " + address + "</p>");
+    document.write("<p><strong>Latitude:</strong> " + latitude + "</p>");
+    document.write("<p><strong>Longitude:</strong> " + longitude + "</p>");
+  </script>
+</body>
+</html>
