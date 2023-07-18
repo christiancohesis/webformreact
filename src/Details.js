@@ -6,7 +6,7 @@ const Details = ({ formData }) => {
   return (
     <div id='details'>
       <h1>Form Submission Details</h1>
-      <h2>Requester Information</h2>
+      <h2>Requester Information:</h2>
       <p>Name: {name}</p>
       <p>Email: {email}</p>
       <p>Phone: {phone}</p>
